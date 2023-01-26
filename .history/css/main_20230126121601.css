@@ -89,7 +89,6 @@ textarea {
 
 img {
     width: 100%;
-    height: auto;
 }
 
 
@@ -138,34 +137,13 @@ header {
 
 .col {
     position: relative;
-    background-color: rgb(233, 227, 200);
+    background-color: rgb(242, 230, 177);
 }
 
-.placeholder-small{
-    width: 100px;
+.placeholder img{
+    width: 200px;
     height: 100px;
 }
-
-.row p {
-    text-align: center;
-}
-
-.footer-row-1{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-row-2{
-    display: grid;
-    row-gap: 1rem;
-}
-
-.footer-text{
-    text-align: left;
-}
-
-
 
 /* 2.2 Small only */
 

@@ -139,7 +139,9 @@ header {
 .col {
     position: relative;
     background-color: rgb(233, 227, 200);
+    
 }
+
 
 .placeholder-small{
     width: 100px;
@@ -150,15 +152,10 @@ header {
     text-align: center;
 }
 
-.footer-row-1{
+.footer-col{
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.footer-row-2{
-    display: grid;
-    row-gap: 1rem;
 }
 
 .footer-text{
