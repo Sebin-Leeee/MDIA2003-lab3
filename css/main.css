@@ -108,6 +108,7 @@ h6 {
 
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
 }
 
 
@@ -123,7 +124,7 @@ main,
 section,
 footer,
 header {
-    outline: 1px solid #ccc;
+    outline: 0.2px solid #ccc;
     min-height: 1rem;
     padding: 1rem;
 }
@@ -138,35 +139,41 @@ header {
 
 .col {
     position: relative;
-    background-color: rgb(233, 227, 200);
 }
 
-.placeholder-small{
-    width: 100px;
-    height: 100px;
-}
-
-.row p {
+.section-latest-projects p {
     text-align: center;
 }
 
-.footer-row-1{
+.clients-col-1 img,
+.clients-col-2 img,
+.clients-col-3 img,
+.clients-col-4 img,
+.clients-col-5 img{
+    max-height: 5rem;
+    width: auto;
+}
+
+.clients-col-1,
+.clients-col-2,
+.clients-col-3,
+.clients-col-4,
+.clients-col-5{
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
 }
 
-.footer-row-2{
-    display: grid;
-    row-gap: 1rem;
-}
-
-.footer-text{
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: left;
 }
 
-
-
+.footer-header img{
+    max-width: 3.7rem;
+}
 /* 2.2 Small only */
 
 @media screen and (max-width: 39.9375em) {
