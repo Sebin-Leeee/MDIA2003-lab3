@@ -33,8 +33,6 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    margin-right: 15%;
-    margin-left: 15%;
 }
 
 ::-moz-selection {
@@ -124,7 +122,7 @@ main,
 section,
 footer,
 header {
-    outline: 0.2px solid #ccc;
+    outline: 0.1px solid #ccc;
     min-height: 1rem;
     padding: 1rem;
 }
@@ -162,6 +160,51 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(240, 240, 240);
+    gap: 0.5vw;
+}
+
+.row h1{
+    margin-bottom: 0;
+}
+
+.row p{
+    margin-top: 0;
+}
+
+.project{
+    width: 100%;
+    max-width: 700px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+}
+  
+.col:hover .project {
+    opacity: 0.3;
+}
+  
+.col:hover .middle {
+    opacity: 0.8;
+}
+  
+.project-name{
+    background-color:rgb(38,168,205);
+    color: white;
+    font-size: 20px;
+    padding: 80px 140px;
+    text-align: left;
 }
 
 .footer-header{
@@ -169,11 +212,29 @@ header {
     align-items: center;
     justify-content: center;
     text-align: left;
+    gap: 1vw;
 }
 
 .footer-header img{
     max-width: 3.7rem;
 }
+
+footer{
+    background-color: rgb(22,26,47);
+    color: white;
+}
+
+footer h4{
+    text-align: left;
+}
+
+.sns-icons{
+    display: flex;
+    gap: 0.2vw;
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
 /* 2.2 Small only */
 
 @media screen and (max-width: 39.9375em) {
