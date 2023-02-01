@@ -609,7 +609,9 @@ footer h4{
         grid-column-start: 1;
         grid-column-end: -1;
     }
-   
+   .m-hide{
+    display: none;
+   }
 }
 
 
