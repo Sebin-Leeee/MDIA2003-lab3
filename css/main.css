@@ -180,9 +180,7 @@ header {
     font-size: xx-large;
     align-items: flex-end;
 }
-.nav__link__content{
-    min-width: 8.5em;
-}
+
 .nav__link__content a{
     text-decoration: none;
     color: white;
@@ -261,6 +259,13 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(116, 200, 239);
+    width: 100%;
+}
+.latest__hide{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgb(116, 200, 239);
 }
 .latest__date{
     position: absolute;
@@ -298,6 +303,7 @@ header {
     align-items: flex-start;
     margin: 0;
     padding: 0.2em 1em;
+    
 }
 .latest__content__icon i{
     color: white;
@@ -344,6 +350,56 @@ header {
     .s-hide {
         display: none;
     }
+    .row{
+        max-width: 20rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: auto;
+    }
+    .nav__container{
+        align-items: center;
+        margin: 1rem 0.5rem;
+    }
+    .nav__logo{
+        padding: 0;
+    }
+    .nav__hambuger{
+        font-size: larger;
+        background-color: rgb(116, 200, 239);
+        padding: 0.1rem 0.3rem;
+
+    }
+    .nav__hambuger a{
+        text-decoration: none;
+        color: white;
+    }
+    .s__nav__hide{
+        position:absolute;
+        top: 4rem;
+        z-index: 999;
+    }
+    .do__content img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .do__content{
+        display: flex;
+        gap: 1rem;
+    }
+    .do__content__text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .do__content__text h3{
+        margin: 0;
+    }
+    .do__content__text p{
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
 }
 
 
@@ -351,10 +407,10 @@ header {
 
 @media screen and (min-width: 40em) {
     .row {
-        max-width: 70rem;
+        max-width: 40rem;
         column-gap: 1.5rem;
         row-gap: 1.5rem;
-        margin: 0 15%;
+        margin: auto;
     }
     .grid {
         display: grid;
@@ -417,6 +473,15 @@ header {
     }
     .l-hide {
         display: none;
+    }
+    .row {
+        max-width: 60rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: auto;
+    }
+    .nav__link__content{
+        min-width: 8.5em;
     }
 }
 
