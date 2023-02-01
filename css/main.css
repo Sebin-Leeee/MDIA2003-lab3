@@ -4,6 +4,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    width: 100%;
 }
 
 ::-moz-selection {
@@ -95,7 +96,7 @@ footer,
 header {
     outline: 0.1px solid #ccc;
     min-height: 1rem;
-    padding: 1rem;
+
 }
 
 
@@ -260,12 +261,242 @@ footer h4{
     width: 6rem;
     background-color: #166ba2;
 }
+/**/
 
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.nav-col-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.nav__logo{
+    display: flex;
+    padding: 1em 1em 0 0em;
+    font-size: xx-large;
+    align-items: flex-end;
+}
+
+.nav__link__content a{
+    text-decoration: none;
+    color: white;
+}
+.nav__link__icon{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__link__icon i{
+    color: white;
+    font-size: larger;
+}
+.nav__link__icon__bg{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__link__textbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1em;
+}
+.nav__link__textbox h5{
+    margin: 0;
+}
+
+.nav__home{
+    background-color: rgb(109, 188, 109);
+}
+.nav__page{
+    background-color: rgb(237, 191, 85);
+}
+.nav__blog{
+    background-color: rgb(240, 101, 101);
+}
+.nav__portfolio{
+    background-color: rgb(65, 156, 187);
+}
+.nav__email{
+    background-color: rgb(74, 95, 162);
+}
+
+.gallery__bg{
+    background-image: url(/img/placeholder.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 20em;
+}
+.slogan h1{
+    margin: 0;
+    padding: 0;
+}
+.slogan__content__sp{
+    color: rgb(84, 146, 173);
+}
+.do__title p,
+.latest__title p{
+    color: rgb(149, 147, 147);
+}
+.do__content h3{
+    font-weight: bold;
+}
+.do__content p{
+    color: gray;
+    padding: 0.2em 1em;
+}
+.latest__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(116, 200, 239);
+    width: 100%;
+}
+.latest__hide{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgb(116, 200, 239);
+}
+.latest__date{
+    position: absolute;
+    width: 5em;
+    padding: 0.5em 0;
+    top: 0;
+    color: white;
+    background-color: rgb(232, 115, 115);
+}
+.latest__date h4{
+    margin: 0;
+    padding: 0; 
+    font-weight: bold;
+    
+}
+.latest__date p{
+    margin: 0;
+    font-size: smaller;
+}
+.latest__content__text h4{
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.latest__content__text p{
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+.latest__content__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0.2em 1em;
+    
+}
+.latest__content__icon i{
+    color: white;
+}
+.latest__content__icon{
+    margin: 0;
+    padding: 0.3em 0.5em;
+    background-color: rgba(0,0,0,0.3);
+}
+.latest hr{
+    margin:0;
+    border-top: 0.1em solid lightgray;
+}
+.gallery__container{
+    height: 20em;
+}
+.gallery__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gallery__content__text{
+    background-color: rgba(255,255,255,0.7);
+    padding: 0.3em 1em 0.3em 1em;
+    width: fit-content;
+}
+.gallery__content__text:first-child{
+    border-left: 0.4em solid rgb(22, 22, 94);
+}
+.gallery__content__text:nth-child(2){
+    border-left: 0.4em solid rgb(211, 75, 38);
+}    
+.gallery__content__text:last-child{
+    border-left: 0.4em solid rgb(211, 181, 100);
+}
+
+.gallery__content__text h3{
+    text-align: left;
+    margin: 0;
+}
 /* 2.2 Small only */
 
 @media screen and (max-width: 39.9375em) {
     .s-hide {
         display: none;
+    }
+    .row{
+        max-width: 20rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: auto;
+    }
+    .nav__container{
+        align-items: center;
+        margin: 1rem 0.5rem;
+    }
+    .nav__logo{
+        padding: 0;
+    }
+    .nav__hambuger{
+        font-size: larger;
+        background-color: rgb(116, 200, 239);
+        padding: 0.1rem 0.3rem;
+
+    }
+    .nav__hambuger a{
+        text-decoration: none;
+        color: white;
+    }
+    .s__nav__hide{
+        position:absolute;
+        top: 4rem;
+        z-index: 999;
+    }
+    .do__content img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .do__content{
+        display: flex;
+        gap: 1rem;
+    }
+    .do__content__text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .do__content__text h3{
+        margin: 0;
+    }
+    .do__content__text p{
+        margin: 0;
+        padding: 0;
+        text-align: left;
     }
 }
 
@@ -274,10 +505,10 @@ footer h4{
 
 @media screen and (min-width: 40em) {
     .row {
-        max-width: 70rem;
+        max-width: 40rem;
         column-gap: 1.5rem;
         row-gap: 1.5rem;
-        margin: 0 auto;
+        margin: auto;
     }
     .grid {
         display: grid;
@@ -303,6 +534,7 @@ footer h4{
     .m-1-2 {
         grid-template-columns: 1fr 2fr;
     }
+
 }
 
 
@@ -313,7 +545,37 @@ footer h4{
     .m-col-4 {
         grid-template-columns: repeat(2, 1fr);
     }
+    .row {
+        max-width: 60rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: auto;
+    }
+    .nav__link__content{
+        min-width: 8.5em;
+    }
+    
 }
+
+
+/* ==========================================================================
+   2. MODULES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   2. STATES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   2. THEME
+   ========================================================================== */
+
+
+/* ==========================================================================
+   6. UTILITY classes
+   ========================================================================== */
 
 
 /*
