@@ -444,7 +444,7 @@ footer h4{
 }
 /* 2.2 Small only */
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 40em) {
     .s-hide {
         display: none;
     }
@@ -498,6 +498,7 @@ footer h4{
         padding: 0;
         text-align: left;
     }
+  
 }
 
 
@@ -534,29 +535,113 @@ footer h4{
     .m-1-2 {
         grid-template-columns: 1fr 2fr;
     }
-
+    .row {
+        max-width: 40rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: auto;
+    }
+    .grid {
+        display: grid;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+    .nav__link__content{
+        min-width: 0;
+    }
+    
+    .m-row-span {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+  
 }
 
 
 /* 2.4 Medium only */
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .row {
+        max-width: 40rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: auto;
+    }
+    .grid {
+        display: grid;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+    .m-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .m-col-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .m-col-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .m-col-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .m-col-6{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .m-1-2 {
+        grid-template-columns: 1fr 2fr;
+    }
     .m-col-6,
     .m-col-4 {
         grid-template-columns: repeat(2, 1fr);
     }
     .row {
-        max-width: 60rem;
+        max-width: 40rem;
         column-gap: 1.5rem;
         row-gap: 1.5rem;
         margin: auto;
     }
     .nav__link__content{
-        min-width: 8.5em;
+        min-width: 0;
     }
     
+    .m-row-span {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+   
 }
 
+
+
+
+/* 2.5 large screens and up 2.6 Large only */
+
+@media screen and (min-width: 64em) {
+.l-col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+.l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+.l-row-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.l-hide {
+    display: none;
+}
+
+}
 
 /* ==========================================================================
    2. MODULES
